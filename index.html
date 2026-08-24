@@ -4,1060 +4,312 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SDH Lubina I–Větřkovice</title>
+<title>Motání hadic</title>
 
 <style>
-
-*{
-box-sizing:border-box;
-}
-
 body{
-margin:0;
-font-family:Arial,sans-serif;
-min-height:100vh;
-color:white;
-
-background:
-radial-gradient(circle at top right,#5b1010 0%,transparent 35%),
-linear-gradient(145deg,#090d13,#151b24);
-}
-
-.app{
-max-width:950px;
-margin:auto;
-padding:20px 16px 40px;
-}
-
-/* ================= HLAVNI STRANKA ================= */
-
-.header{
-text-align:center;
-padding:25px 10px 35px;
-}
-
-.logo{
-font-size:42px;
-margin-bottom:12px;
-}
-
-.header h1{
-font-size:22px;
-line-height:1.35;
-margin:0;
-}
-
-.header h1 span{
-color:#ef3333;
-}
-
-.district{
-margin-top:7px;
-color:#8995a6;
-font-size:14px;
-}
-
-.section-title{
-color:#8796aa;
-font-size:13px;
-text-transform:uppercase;
-letter-spacing:2px;
-margin:0 5px 14px;
-}
-
-.discipline{
-width:100%;
-border:1px solid rgba(255,255,255,.10);
-border-radius:24px;
-padding:25px 22px;
-margin-bottom:16px;
-color:white;
-text-align:left;
-cursor:pointer;
-background:rgba(255,255,255,.055);
-transition:.2s;
-}
-
-.discipline:hover{
-transform:translateY(-2px);
-background:rgba(255,255,255,.085);
-}
-
-.icon{
-font-size:46px;
-margin-bottom:12px;
-}
-
-.name{
-font-size:23px;
-font-weight:bold;
-margin-bottom:7px;
-}
-
-.description{
-color:#9eabba;
-font-size:14px;
-}
-
-/* ================= MOTANI HADIC ================= */
-
-.screen{
-display:none;
-}
-
-.back{
-border:1px solid #394455;
-background:transparent;
-color:#aeb9c8;
-padding:10px 15px;
-border-radius:11px;
-cursor:pointer;
-margin-bottom:15px;
-}
-
-.card{
-background:rgba(255,255,255,.055);
-border:1px solid rgba(255,255,255,.10);
-border-radius:22px;
+font-family:Arial;
+background:#ececec;
 padding:20px;
-margin-bottom:16px;
 }
 
-.card h2{
-margin:0 0 18px;
-font-size:24px;
+.container{
+max-width:1100px;
+margin:auto;
+background:#fff;
+padding:20px;
+border-radius:10px;
 }
 
-.form{
-display:grid;
-grid-template-columns:1fr 1fr 1fr auto;
-gap:10px;
+header{
+text-align:center;
+margin-bottom:20px;
 }
 
-input{
-width:100%;
-padding:13px;
-border-radius:12px;
-border:1px solid #354052;
-background:#101722;
-color:white;
-font-size:15px;
-}
-
-input::placeholder{
-color:#738095;
+input,button{
+padding:10px;
+margin:5px;
 }
 
 button{
-font-family:inherit;
-}
-
-.primary{
-border:0;
-border-radius:12px;
-padding:13px 18px;
-background:#d72f2f;
-color:white;
-font-weight:bold;
+background:#2e7d32;
+color:#fff;
+border:none;
+border-radius:5px;
 cursor:pointer;
-}
-
-.primary:hover{
-background:#ed3a3a;
-}
-
-.table-wrap{
-overflow-x:auto;
 }
 
 table{
 width:100%;
 border-collapse:collapse;
-margin-top:10px;
-min-width:700px;
-}
-
-th{
-padding:12px 8px;
-background:#b92828;
-color:white;
-}
-
-td{
-padding:12px 8px;
-border-bottom:1px solid rgba(255,255,255,.08);
-text-align:center;
-color:#dbe2eb;
-}
-
-.best{
-font-size:19px;
-font-weight:bold;
-color:#ffd166;
-}
-
-.attempt{
-cursor:pointer;
-padding:3px;
-}
-
-.attempt:hover{
-background:rgba(255,255,255,.08);
-border-radius:5px;
-}
-
-.action{
-border:0;
-background:transparent;
-color:#aeb9c8;
-cursor:pointer;
-font-size:18px;
-margin:0 3px;
-}
-
-.empty{
-text-align:center;
-padding:30px;
-color:#718096;
-}
-
-.status{
-text-align:center;
-color:#68778b;
-font-size:12px;
 margin-top:20px;
 }
 
-.online{
-display:inline-block;
-width:7px;
-height:7px;
-border-radius:50%;
-background:#36d399;
-margin-right:6px;
-box-shadow:0 0 9px #36d399;
+th,td{
+border:1px solid #ccc;
+padding:8px;
+text-align:center;
 }
 
-@media(max-width:700px){
-
-.form{
-grid-template-columns:1fr 1fr;
+th{
+background:#c62828;
+color:white;
 }
-
-.form .primary{
-grid-column:1 / -1;
-}
-
-}
-
 </style>
 </head>
 
-
 <body>
 
+<div class="container">
 
-<div class="app">
-
-
-<!-- ================= HLAVNI STRANKA ================= -->
-
-<div id="home">
-
-<header class="header">
-
-<div class="logo">🔥</div>
-
-<h1>
-
-<span>SBOR DOBROVOLNÝCH HASIČŮ</span><br>
-
-LUBINA I–VĚTŘKOVICE
-
-</h1>
-
-<div class="district">
-okres Nový Jičín
-</div>
-
+<header>
+<h1>🚒 Letní večer SDH Lubina II Větřkovice</h1>
+<h2>18. července 2026</h2>
 </header>
 
-
-<div class="section-title">
-Soutěže
+<div>
+<input id="prijmeni" placeholder="Příjmení">
+<input id="jmeno" placeholder="Jméno">
+<button onclick="pridat()">Přidat</button>
 </div>
-
-
-<!-- POZARNI UTOK -->
-
-<button
-class="discipline"
-onclick="otevriPozarni()">
-
-<div class="icon">
-🚒
-</div>
-
-<div class="name">
-Požární útok
-</div>
-
-<div class="description">
-Aktuální pořadí
-</div>
-
-</button>
-
-
-<!-- MOTANI HADIC -->
-
-<button
-class="discipline"
-onclick="otevriMotani()">
-
-<div class="icon">
-🌀
-</div>
-
-<div class="name">
-Motání hadic
-</div>
-
-<div class="description">
-Jednotlivci · nejrychlejší čas
-</div>
-
-</button>
-
-</div>
-
-
-<!-- ================= MOTANI HADIC ================= -->
-
-<div id="motani" class="screen">
-
-
-<button
-class="back"
-onclick="zpet()">
-
-← Zpět
-
-</button>
-
-
-<div class="card">
-
-<h2>
-🌀 Motání hadic
-</h2>
-
-
-<div class="form">
-
-<!-- PRVNI JE PRIJMENI -->
-
-<input
-id="prijmeni"
-placeholder="Příjmení">
-
-
-<!-- DRUHE JE JMENO -->
-
-<input
-id="jmeno"
-placeholder="Jméno">
-
-
-<!-- TRETI JE DRUZSTVO -->
-
-<input
-id="druzstvo"
-placeholder="Družstvo">
-
-
-<button
-class="primary"
-onclick="pridat()">
-
-+ Přidat
-
-</button>
-
-</div>
-
-</div>
-
-
-<div class="card">
-
-<h2>
-Aktuální pořadí
-</h2>
-
-
-<div class="table-wrap">
 
 <table>
-
 <thead>
-
 <tr>
-
 <th>#</th>
-
 <th>Příjmení</th>
-
 <th>Jméno</th>
-
-<th>Družstvo</th>
-
-<th>Nejlepší</th>
-
-<th>Pokusy</th>
-
 <th>Akce</th>
-
 </tr>
-
 </thead>
 
-
-<tbody id="tab">
-
-</tbody>
-
+<tbody id="tab"></tbody>
 </table>
 
 </div>
 
-</div>
-
-
-<div class="status">
-
-<span class="online"></span>
-
-Živá aktualizace
-
-</div>
-
-</div>
-
-
-</div>
-
-
-
 <script type="module">
 
-
-/* ================= FIREBASE ================= */
-
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import {
-initializeApp
-}
-from
-"https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";
-
-
-import {
-getFirestore,
-collection,
-addDoc,
-onSnapshot,
-deleteDoc,
-doc,
-updateDoc,
-serverTimestamp
-}
-from
-"https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
-
+  getFirestore,
+  collection,
+  addDoc,
+  onSnapshot,
+  deleteDoc,
+  doc,
+  updateDoc
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 const firebaseConfig = {
-
-apiKey:
-"AIzaSyCIZ3Z5HvF6P9TSQ9GxiZEIoVGFsay2pbo",
-
-authDomain:
-"fire-sport-results.firebaseapp.com",
-
-projectId:
-"fire-sport-results",
-
-storageBucket:
-"fire-sport-results.firebasestorage.app",
-
-messagingSenderId:
-"63170955961",
-
-appId:
-"1:63170955961:web:f5b9e052312a79b17de968"
-
+  apiKey: "AIzaSyBnHKiL6ANjvRbUpd3sv4TwGuq7-4_c6J8",
+  authDomain: "zkouska-2.firebaseapp.com",
+  projectId: "zkouska-2",
+  storageBucket: "zkouska-2.firebasestorage.app",
+  messagingSenderId: "51239007198",
+  appId: "1:51239007198:web:4e98cdfd91279a337da34f"
 };
 
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-const app =
-initializeApp(firebaseConfig);
+// 👉 TADY JE TVÁ KOLEKCE
+const col = collection(db, "motani_hadic");
 
-
-const db =
-getFirestore(app);
-
-
-const col =
-collection(db,"motani_hadic");
-
-
-let data=[];
-
-
-
-/* ================= NAVIGACE ================= */
-
-window.otevriMotani=function(){
-
-document
-.getElementById("home")
-.style.display="none";
-
-document
-.getElementById("motani")
-.style.display="block";
-
-};
-
-
-window.otevriPozarni=function(){
-
-alert("Požární útok připravujeme.");
-
-};
-
-
-window.zpet=function(){
-
-document
-.getElementById("motani")
-.style.display="none";
-
-document
-.getElementById("home")
-.style.display="block";
-
-};
-
-
-
-/* ================= VALIDACE CASU ================= */
-
+let data = [];
 function validTime(t){
 
-if(!t.includes(":"))
-return false;
+    if(!t.includes(":")) return false;
 
-const casti=t.split(":");
+    const casti = t.split(":");
 
-if(casti.length!==2)
-return false;
+    if(casti.length !== 2) return false;
 
-const sekundy=Number(casti[0]);
+    const sekundy = Number(casti[0]);
+    const setiny = Number(casti[1]);
 
-const setiny=Number(casti[1]);
+    if(isNaN(sekundy) || isNaN(setiny)) return false;
 
-if(isNaN(sekundy)||isNaN(setiny))
-return false;
+    // sekundy mohou být libovolně vysoké
+    if(sekundy < 0) return false;
 
-if(sekundy<0)
-return false;
+    // setiny musí být 00–99
+    if(setiny < 0 || setiny > 99) return false;
 
-if(setiny<0||setiny>99)
-return false;
-
-return true;
-
+    return true;
 }
-
-
-
-/* ================= PREVOD CASU ================= */
-
-function casNaCislo(cas){
-
-const casti=cas.split(":");
-
-return Number(casti[0])*100+
-Number(casti[1]);
-
-}
-
-
-
 /* ================= REALTIME ================= */
+onSnapshot(col, (snap) => {
 
-onSnapshot(col,(snap)=>{
+data = [];
 
-data=[];
-
-snap.forEach(d=>{
-
-data.push({
-
-id:d.id,
-...d.data()
-
-});
-
+snap.forEach(d => {
+data.push({ id: d.id, ...d.data() });
 });
 
 render();
 
 });
 
+/* ================= ADD ================= */
+window.pridat = async function(){
 
+const p = document.getElementById("prijmeni").value.trim();
+const j = document.getElementById("jmeno").value.trim();
 
-/* ================= PRIDAT ZAVODNIKA ================= */
-
-window.pridat=async function(){
-
-const p=
-document
-.getElementById("prijmeni")
-.value
-.trim();
-
-const j=
-document
-.getElementById("jmeno")
-.value
-.trim();
-
-const d=
-document
-.getElementById("druzstvo")
-.value
-.trim();
-
-
-if(!p||!j||!d){
-
-alert(
-"Vyplň příjmení, jméno a družstvo."
-);
-
-return;
-
-}
-
+if(!p || !j) return;
 
 await addDoc(col,{
-
 prijmeni:p,
-
 jmeno:j,
-
-druzstvo:d,
-
 pokusy:[],
-
-nejlepsi:"",
-
-vytvoreno:serverTimestamp()
-
+nejlepsi:""
 });
 
-
-document
-.getElementById("prijmeni")
-.value="";
-
-document
-.getElementById("jmeno")
-.value="";
-
-document
-.getElementById("druzstvo")
-.value="";
-
+document.getElementById("prijmeni").value="";
+document.getElementById("jmeno").value="";
 };
 
+/* ================= DELETE ================= */
+window.smaz = async function(id){
 
+const potvrdit = confirm("Opravdu chceš smazat tohoto soutěžícího?");
 
-/* ================= SMAZAT ================= */
-
-window.smaz=async function(id){
-
-if(!confirm(
-"Opravdu chceš smazat tohoto soutěžícího?"
-))
-return;
-
-
-await deleteDoc(
-doc(db,"motani_hadic",id)
-);
-
-};
-
-
-
-/* ================= EDIT ZAVODNIKA ================= */
-
-window.edit=async function(id){
-
-const z=
-data.find(s=>s.id===id);
-
-if(!z)
-return;
-
-
-const p=
-prompt(
-"Příjmení:",
-z.prijmeni
-);
-
-if(!p)
-return;
-
-
-const j=
-prompt(
-"Jméno:",
-z.jmeno
-);
-
-if(!j)
-return;
-
-
-const d=
-prompt(
-"Družstvo:",
-z.druzstvo || ""
-);
-
-if(!d)
-return;
-
-
-await updateDoc(
-
-doc(db,"motani_hadic",id),
-
-{
-
-prijmeni:p,
-
-jmeno:j,
-
-druzstvo:d
-
+if(!potvrdit){
+    return;
 }
 
-);
+await deleteDoc(doc(db,"motani_hadic",id));
 
 };
 
+/* ================= EDIT ================= */
+window.edit = async function(id){
 
+const z = data.find(s=>s.id===id);
 
-/* ================= PRIDAT POKUS ================= */
+const p = prompt("Příjmení:", z.prijmeni);
+if(!p) return;
 
-window.pridatPokus=async function(id){
+const j = prompt("Jméno:", z.jmeno);
+if(!j) return;
 
-const cas=
-prompt(
-"Zadej čas například 15:23"
-);
+await updateDoc(doc(db,"motani_hadic",id),{
+prijmeni:p,
+jmeno:j
+});
 
-if(!cas)
-return;
+};
 
+/* ================= RENDER ================= */
+window.render = function(){
+
+  const t = document.getElementById("tab");
+  t.innerHTML = "";
+
+  data.forEach((z,i)=>{
+    t.innerHTML += `
+      <tr>
+        <td>${i+1}</td>
+        <td>${z.prijmeni}</td>
+        <td>${z.jmeno}</td>
+        <td>
+          <button onclick="edit('${z.id}')">✏️</button>
+          <button onclick="smaz('${z.id}')">🗑️</button>
+          <button onclick="pridatPokus('${z.id}')">➕</button>
+        </td>
+        <td>${z.nejlepsi || "-"}</td>
+        <td>
+  ${(z.pokusy || []).map((c, i) => `
+    <div onclick="editPokus('${z.id}', ${i})"
+         style="cursor:pointer; padding:2px;">
+      ⏱ ${c}
+    </div>
+  `).join("")}
+</td>
+      </tr>
+    `;
+  });
+
+};
+window.pridatPokus = async function(id){
+
+const cas = prompt("Zadej čas (15:23)");
+if(!cas) return;
 
 if(!validTime(cas)){
-
-alert(
-"Špatný čas! Použij například 15:23."
-);
-
+alert("Špatný čas! Použij HH:MM (např. 15:30)");
 return;
-
 }
+if(!cas) return;
 
+const z = data.find(s=>s.id===id);
+if(!z) return;
 
-const z=
-data.find(s=>s.id===id);
-
-if(!z)
-return;
-
-
-const pokusy=
-[...(z.pokusy||[])];
-
+const pokusy = z.pokusy || [];
 pokusy.push(cas);
 
-
-/* NEJLEPSI CAS */
-
-let nej=pokusy[0];
-
+// výpočet nejlepšího času
+let nej = pokusy[0];
 
 for(let i=1;i<pokusy.length;i++){
 
-if(
-casNaCislo(pokusy[i])
-<
-casNaCislo(nej)
-){
+const [m1,s1] = nej.split(":").map(Number);
+const [m2,s2] = pokusy[i].split(":").map(Number);
 
-nej=pokusy[i];
-
+if((m2*60+s2) < (m1*60+s1)){
+nej = pokusy[i];
+}
 }
 
-}
-
-
-await updateDoc(
-
-doc(db,"motani_hadic",id),
-
-{
-
+await updateDoc(doc(db,"motani_hadic",id),{
 pokusy:pokusy,
-
 nejlepsi:nej
-
-}
-
-);
+});
 
 };
+window.editPokus = async function(id,index){
 
+const z = data.find(s => s.id === id);
 
+if(!z || !Array.isArray(z.pokusy)) return;
 
-/* ================= UPRAVIT POKUS ================= */
+const stare = z.pokusy[index];
+if(!stare) return;
 
-window.editPokus=async function(id,index){
+const novy = prompt("Upravit čas (15:23):", stare);
+if(!novy) return;
 
-const z=
-data.find(s=>s.id===id);
-
-if(!z||!Array.isArray(z.pokusy))
-return;
-
-
-const stare=
-z.pokusy[index];
-
-if(!stare)
-return;
-
-
-const novy=
-prompt(
-"Upravit čas:",
-stare
-);
-
-if(!novy)
-return;
-
-
+// validace (pokud ji chceš používat)
+if(typeof validTime === "function"){
 if(!validTime(novy)){
-
-alert(
-"Špatný čas! Použij například 15:23."
-);
-
+alert("Špatný čas! Použij HH:MM");
 return;
-
+}
 }
 
+// uložíme změnu
+z.pokusy[index] = novy;
 
-const pokusy=
-[...(z.pokusy||[])];
+// výpočet nejlepšího času
+let nej = z.pokusy[0];
 
-pokusy[index]=novy;
+for(let i=1;i<z.pokusy.length;i++){
 
+const [m1,s1] = nej.split(":").map(Number);
+const [m2,s2] = z.pokusy[i].split(":").map(Number);
 
-/* ZNOVU SPOCITAT NEJLEPSI */
-
-let nej=pokusy[0];
-
-
-for(let i=1;i<pokusy.length;i++){
-
-if(
-casNaCislo(pokusy[i])
-<
-casNaCislo(nej)
-){
-
-nej=pokusy[i];
-
+if((m2*60+s2) < (m1*60+s1)){
+nej = z.pokusy[i];
+}
 }
 
-}
-
-
-await updateDoc(
-
-doc(db,"motani_hadic",id),
-
-{
-
-pokusy:pokusy,
-
+await updateDoc(doc(db,"motani_hadic",id),{
+pokusy:z.pokusy,
 nejlepsi:nej
-
-}
-
-);
-
-};
-
-
-
-/* ================= RAZENI PODLE PRIJMENI ================= */
-
-window.render=function(){
-
-const t=
-document.getElementById("tab");
-
-t.innerHTML="";
-
-
-const serazeno=
-[...data].sort((a,b)=>{
-
-const p1=
-(a.prijmeni||"").toLocaleLowerCase("cs");
-
-const p2=
-(b.prijmeni||"").toLocaleLowerCase("cs");
-
-return p1.localeCompare(p2,"cs");
-
-});
-
-
-if(serazeno.length===0){
-
-t.innerHTML=`
-
-<tr>
-
-<td
-colspan="7"
-class="empty">
-
-Zatím není přidaný žádný závodník.
-
-</td>
-
-</tr>
-
-`;
-
-return;
-
-}
-
-
-serazeno.forEach((z,i)=>{
-
-const pokusy=
-(z.pokusy||[])
-.map((c,index)=>`
-
-<div
-class="attempt"
-onclick="editPokus('${z.id}',${index})">
-
-⏱ ${c}
-
-</div>
-
-`)
-.join("");
-
-
-t.innerHTML+=`
-
-<tr>
-
-<td>
-${i+1}
-</td>
-
-<td>
-${z.prijmeni}
-</td>
-
-<td>
-${z.jmeno}
-</td>
-
-<td>
-${z.druzstvo||"-"}
-</td>
-
-<td class="best">
-
-${z.nejlepsi||"-"}
-
-</td>
-
-<td>
-
-${pokusy||"-"}
-
-</td>
-
-<td>
-
-<button
-class="action"
-onclick="edit('${z.id}')">
-
-✏️
-
-</button>
-
-
-<button
-class="action"
-onclick="smaz('${z.id}')">
-
-🗑️
-
-</button>
-
-
-<button
-class="action"
-onclick="pridatPokus('${z.id}')">
-
-➕
-
-</button>
-
-</td>
-
-</tr>
-
-`;
-
 });
 
 };
-
-
 </script>
 
 </body>
